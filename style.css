@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    min-height: 94vh;
+    width: 100%;
+    /* background-image: url(image3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(./image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+nav {
+    /* margin: 2px; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    background-color: #f598df;
+}
+
+.fa-circle-play {
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+.card h5,
+h4 {
+    margin: 10px;
+
+}
+
+.header li {
+    font-size: 1.5rem;
+    display: inline;
+    margin-left: 3rem;
+    color: black;
+}
+
+.header li:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.navitem {
+    position: relative;
+    cursor: pointer;
+}
+
+.navitem a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    height: 35%;
+    width: 25%;
+    margin: 1rem 2.4rem;
+    border: 1px solid blue;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 7px rgba(0, 0, 0, 0.16), 0 4px 7px rgba(0, 0, 0, 0.23); */
+    /* background-color: red; */
+}
+
+.songCard {
+    margin: 0 24px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card:hover {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.16), 0 4px 7px rgba(0, 0, 0, 0.23);
+}
+
+#img {
+    width: 94%;
+    height: 100%;
+    margin: 7.5px;
+    border-radius: 10px;
+}
+
+.cardline1 {
+    display: flex;
+    margin: .2rem;
+}
+
+#progressbar {
+    margin: 5px 0 0 15px;
+    width: 12rem;
+}
+
+.full {
+    background-image: url(fimg.jpg);
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.singup input {
+    padding: 6px;
+    margin: 14px 0 12px 0;
+    border-radius: 8px;
+}
+
+.singup button {
+    padding: 6px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+
+.foot {
+    /* margin: 25px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.foot h2 {
+    margin: 15px 0;
+}
+.response {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot a {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:797px) {
+    * {
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    .navitem a {
+        display: none;
+    }
+
+    .cardline1 {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 40%;
+        width: 70%;
+    }
+
+    #img {
+        width: 95%;
+        height: 50%;
+    }
+
+    .fa-circle-play {
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+
+    .card h4 {
+        margin: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .card h5 {
+        margin: 2px 10px;
+        font-size: 1rem;
+    }
+
+    .full {
+        height: 70vw;
+        width: 100%;
+    }
+
+    .singup input {
+        padding: 3.5px;
+        font-size: .8rem;
+        margin: 14px 0 12px 0;
+        border-radius: 8px;
+        border: 1px solid black;
+    }
+
+    .full h1 {
+        font-size: 1.1rem;
+    }
+
+    .full h3 {
+        font-size: .9rem;
+    }
+
+    .singup button {
+        padding: 3px;
+        border: 1px solid blue;
+        font-size: .8rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .response {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .foot a {
+        margin: 2px 0 2px 2px;
+    }
+    .foot h2 {
+        margin: 0 0 10px 0;
+    }
+}
