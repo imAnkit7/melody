@@ -15,7 +15,7 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 40;
 }
 
 nav {
@@ -29,6 +29,10 @@ nav {
 }
 
 .fa-circle-play {
+    font-size: 1.7rem;
+    margin: 10px;
+}
+.fa-circle-pause{
     font-size: 1.7rem;
     margin: 10px;
 }
@@ -78,7 +82,10 @@ h4 {
     /* box-shadow: 0 4px 7px rgba(0, 0, 0, 0.16), 0 4px 7px rgba(0, 0, 0, 0.23); */
     /* background-color: red; */
 }
-
+.card input{
+    margin: 0 0 0 15px;
+    width: 13rem;
+}
 .songCard {
     margin: 0 24px;
     /* display: flex;
@@ -97,7 +104,51 @@ h4 {
     margin: 7.5px;
     border-radius: 10px;
 }
-
+.SiCard{
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(./ccard2.jpg);
+    height: 48vh;
+    background-size: cover;
+    width: 52vw;
+    margin:0 50px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.bigCard{
+    margin: 20px;
+}
+.SiCard2{
+    /* background-image: url(card2.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.67)), url(./ccard.jpg);
+    height: 48vh;
+    background-size: cover;
+    width: 52vw;
+    margin: 0 50px;
+}
+.text{
+    margin:  10px;
+    color: white;
+    font-size: 1.4rem;
+}
+.text p,h2,span{
+    margin: 10px;
+}
+.box{
+    margin: 10px;
+   
+    border: 1px solid white;
+    height: 6vh;
+    width: 12vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+}
 .cardline1 {
     display: flex;
     margin: .2rem;
@@ -186,6 +237,10 @@ footer {
         margin: 5px;
         font-size: 1.5rem;
     }
+    .fa-circle-pause{
+        margin: 5px;
+        font-size: 1.5rem;
+    }
 
     .card h4 {
         margin: 5px 10px;
@@ -195,6 +250,10 @@ footer {
     .card h5 {
         margin: 2px 10px;
         font-size: 1rem;
+    }
+    .card input{
+        margin: 0 0 0 15px;
+        width: 15rem;
     }
 
     .full {
@@ -222,6 +281,24 @@ footer {
         padding: 5.5px;
         border: 1px solid blue;
         font-size: .8rem;
+    }
+    .SiCard{
+        height: 30vh;
+        background-size: cover;
+        width: 90vw;
+        margin:0 50px 0 0;
+        /* font-size: 1rem; */
+    }
+    .SiCard2{
+        height: 30vh;
+        background-size: cover;
+        width: 90vw;
+        margin:0 50px 0 0;
+        /* font-size: 1rem; */
+    }
+    .box{
+        height: 6vh;
+        width: 30vw;
     }
 
     footer {
