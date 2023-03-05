@@ -5,20 +5,12 @@ const unexplore = () => {
     document.getElementsByClassName('box')[0].style.removeProperty("background-color")
 }
 // -----------------------------
-let songs = [
-    { songName: "Aadat_Se.mp3", filepath: "Aadat_Se.mp3", coverpath: "" },
-    { songName: "BESABRIYAAN.mp3", filepath: "BESABRIYAAN.mp3", coverpath: "" },
-    // { songName: "Tujh_Mein_Rab_Dikhta_Hai_yara", filepath: "Tujh_Mein_Rab_Dikhta_Hai_.mp3", coverpath: "" },
-    { songName: "isqtera.mp3", filepath: "isqtera.mp3", coverpath: "" },
-    { songName: "Kaala_Jaadu.mp3", filepath: "Kaala_Jaadu.mp3", coverpath: "" },
-    { songName: "Thug_Le.mp3", filepath: "Thug_Le.mp3", coverpath: "" },
-    // { songName: "Zara_Zara_Bahekta_Hai_|_JalRaj_", filepath: "Zara_Zara_Bahekta_Hai__JalRaj__.mp3", coverpath: "" },
-]
+
 // ------------------------------------
 let audio2 = new Audio('Thug_Le.mp3')
-let audio3=new Audio('Aadat_Se.mp3')
-let audio4=new Audio('BESABRIYAAN.mp3')
-let audio5=new Audio('Kaala_Jaadu.mp3')
+let audio3 = new Audio('Aadat_Se.mp3')
+let audio4 = new Audio('BESABRIYAAN.mp3')
+let audio5 = new Audio('Kaala_Jaadu.mp3')
 let audio = new Audio('isqtera.mp3')
 // let arrp=['palyIcon1','playIcon2','playIcon3','playIcon4','playIcon5']
 // let numarr = ['0', '1', '2', '3', '4', '5']
@@ -29,28 +21,23 @@ let playIcon1 = document.getElementsByClassName('playIcon')[1]
 let playIcon2 = document.getElementsByClassName('playIcon')[2]
 let playIcon3 = document.getElementsByClassName('playIcon')[3]
 let playIcon4 = document.getElementsByClassName('playIcon')[4]
-// let playIcon = document.getElementsByClassName('playIcon')[]
-// console.log(playIcon)
-// Array.from(document.getElementsByClassName('fa-circle-play')).forEach((element) =>e {
-//     element.addEventListener('click', () => {
-//         if (audio2.paused) {
-// songIndex = (e.target.id);
-// audio2.src = songs[i].filepath;
-//             audio2.play();
-//             playIcon.classList.remove("fa-circle-play")
-//             playIcon.classList.add("fa-circle-pause")
-//         } else if (audio2.play) {
-//             audio2.pause();
-//             playIcon.classList.add("fa-circle-play")
-//             playIcon.classList.remove("fa-circle-pause")
-//         }
-//     })
-// })
+
 document.getElementsByClassName('fa-circle-play')[0].addEventListener('click', () => {
     if (audio2.paused) {
-        // songIndex = (e.target.id);
-        // audio2.src = songs[i].filepath;
         audio2.play();
+        audio.pause()
+        audio3.pause()
+        audio4.pause()
+        audio5.pause()
+        playIcon3.classList.add("fa-circle-play")
+        playIcon3.classList.remove("fa-circle-pause")
+        playIcon2.classList.add("fa-circle-play")
+        playIcon2.classList.remove("fa-circle-pause")
+        playIcon1.classList.add("fa-circle-play")
+        playIcon1.classList.remove("fa-circle-pause")
+        playIcon4.classList.add("fa-circle-play")
+        playIcon4.classList.remove("fa-circle-pause")
+
         playIcon0.classList.remove("fa-circle-play")
         playIcon0.classList.add("fa-circle-pause")
     } else if (audio2.play) {
@@ -61,9 +48,20 @@ document.getElementsByClassName('fa-circle-play')[0].addEventListener('click', (
 })
 document.getElementsByClassName('fa-circle-play')[1].addEventListener('click', (e) => {
     if (audio3.paused) {
-        // songIndex = (e.target.id);
-        // audio2.src = songs[i].filepath;
         audio3.play();
+        audio2.pause()
+        audio.pause()
+        audio4.pause()
+        audio5.pause()
+        playIcon3.classList.add("fa-circle-play")
+        playIcon3.classList.remove("fa-circle-pause")
+        playIcon2.classList.add("fa-circle-play")
+        playIcon2.classList.remove("fa-circle-pause")
+        playIcon4.classList.add("fa-circle-play")
+        playIcon4.classList.remove("fa-circle-pause")
+        playIcon0.classList.add("fa-circle-play")
+        playIcon0.classList.remove("fa-circle-pause")
+
         playIcon1.classList.remove("fa-circle-play")
         playIcon1.classList.add("fa-circle-pause")
     } else if (audio3.play) {
@@ -74,9 +72,20 @@ document.getElementsByClassName('fa-circle-play')[1].addEventListener('click', (
 })
 document.getElementsByClassName('fa-circle-play')[2].addEventListener('click', (e) => {
     if (audio4.paused) {
-        // songIndex = (e.target.id);
-        // audio2.src = songs[i].filepath;
         audio4.play();
+        audio2.pause()
+        audio3.pause()
+        audio.pause()
+        audio5.pause()
+        playIcon3.classList.add("fa-circle-play")
+        playIcon3.classList.remove("fa-circle-pause")
+        playIcon4.classList.add("fa-circle-play")
+        playIcon4.classList.remove("fa-circle-pause")
+        playIcon1.classList.add("fa-circle-play")
+        playIcon1.classList.remove("fa-circle-pause")
+        playIcon0.classList.add("fa-circle-play")
+        playIcon0.classList.remove("fa-circle-pause")
+
         playIcon2.classList.remove("fa-circle-play")
         playIcon2.classList.add("fa-circle-pause")
     } else if (audio4.play) {
@@ -87,13 +96,20 @@ document.getElementsByClassName('fa-circle-play')[2].addEventListener('click', (
 })
 document.getElementsByClassName('fa-circle-play')[3].addEventListener('click', (e) => {
     if (audio5.paused) {
-        // songIndex = (e.target.id);
-        // audio2.src = songs[i].filepath;
-        // audio.pause()
-        // audio2.pause()
-        // audio3.pause()
-        // audio4.pause()
-        // audio5.play();
+        audio5.play();
+        audio2.pause()
+        audio3.pause()
+        audio4.pause()
+        audio.pause()
+        playIcon4.classList.add("fa-circle-play")
+        playIcon4.classList.remove("fa-circle-pause")
+        playIcon2.classList.add("fa-circle-play")
+        playIcon2.classList.remove("fa-circle-pause")
+        playIcon1.classList.add("fa-circle-play")
+        playIcon1.classList.remove("fa-circle-pause")
+        playIcon0.classList.add("fa-circle-play")
+        playIcon0.classList.remove("fa-circle-pause")
+
         playIcon3.classList.remove("fa-circle-play")
         playIcon3.classList.add("fa-circle-pause")
     } else if (audio5.play) {
@@ -101,12 +117,27 @@ document.getElementsByClassName('fa-circle-play')[3].addEventListener('click', (
         playIcon3.classList.add("fa-circle-play")
         playIcon3.classList.remove("fa-circle-pause")
     }
+    //  else if (audio.play || audio2.play || audio3.play || audio4.play) {
+        // alert("please pause the previous song to play this song")
+    // }
 })
+
 document.getElementsByClassName('fa-circle-play')[4].addEventListener('click', (e) => {
     if (audio.paused) {
-        // songIndex = (e.target.id);
-        // audio2.src = songs[i].filepath;
         audio.play();
+        audio2.pause()
+        audio3.pause()
+        audio4.pause()
+        audio5.pause()
+        playIcon3.classList.add("fa-circle-play")
+        playIcon3.classList.remove("fa-circle-pause")
+        playIcon2.classList.add("fa-circle-play")
+        playIcon2.classList.remove("fa-circle-pause")
+        playIcon1.classList.add("fa-circle-play")
+        playIcon1.classList.remove("fa-circle-pause")
+        playIcon0.classList.add("fa-circle-play")
+        playIcon0.classList.remove("fa-circle-pause")
+
         playIcon4.classList.remove("fa-circle-play")
         playIcon4.classList.add("fa-circle-pause")
     } else if (audio.play) {
@@ -149,7 +180,7 @@ audio4.addEventListener('timeupdate', () => {
     let range2 = document.getElementById("progressbar2")
     range2.value = progress;
 })
-let range2= document.getElementById("progressbar2")
+let range2 = document.getElementById("progressbar2")
 range2.addEventListener('change', () => {
     audio4.currentTime = range.value * audio4.duration / 100;
 })
