@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -93,7 +94,12 @@ h4 {
     justify-content: center;
     align-items: center; */
 }
-
+.centeritn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card:hover {
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.16), 0 4px 7px rgba(0, 0, 0, 0.23);
 }
@@ -133,6 +139,26 @@ h4 {
 .text p,h2,span{
     margin: 10px;
 }
+.contain{
+    margin: 15px;
+    border: 1px solid white;
+    height: 5vh;
+    width: 10vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain:hover{
+    background-color: #2e492a;
+    transition: 1.5s;
+}
+.centeritn a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+
 .box{
     margin: 10px;
    
@@ -221,6 +247,10 @@ footer {
     .cardline1 {
         flex-direction: column;
     }
+    .contain{
+        height: 4vh;
+        width: 17vw;
+    }
 
     .card {
         margin: 1rem 1rem;
@@ -298,7 +328,7 @@ footer {
     }
     .box{
         height: 6vh;
-        width: 35vw;
+        width: 32vw;
     }
 
     footer {
